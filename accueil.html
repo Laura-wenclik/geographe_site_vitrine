@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<title>geographe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="accueil.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<style>
+body {font-family: "Raleway", sans-serif}
+h1,h2,h3,h4,h5,h6{font-family: 'Josefin Sans', sans-serif}
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/accueil_2.png");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+
+</style>
+  <body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="top">
+      <div class="w3-bar w3-sand w3-card" id="myNavbar">
+        <a href="accueil.html" class="w3-bar-item w3-button w3-wide w3-hover-amber">GEOGRAPHE</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="http://www.ign.fr" class="w3-bar-item w3-button w3-hover-amber"><i class="fas fa-home"></i> CONCERNANT L'IGN</a>
+          <a href="classement.php" class="w3-bar-item w3-button w3-hover-amber"><i class="fas fa-scroll"></i> CLASSEMENT</a>
+          <a href="items.html" class="w3-bar-item w3-button w3-hover-amber"><i class="far fa-gem"></i> ITEMS</a>
+          <a href="telechargement.html" class="w3-bar-item w3-button w3-hover-amber"><i class="fas fa-download"></i> TELECHARGER</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-user-circle"></i> CONNEXION</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+          <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">X</a>
+    <a href="http://www.ign.fr" onclick="w3_close()" class="w3-bar-item w3-button"> CONCERNANT L'IGN</a>
+    <a href="classement.php" onclick="w3_close()" class="w3-bar-item w3-button"> CLASSEMENT</a>
+    <a href="items.html" class="w3-bar-item w3-button w3-hover-amber"> ITEMS</a>
+    <a href="telechargement.html" onclick="w3_close()" class="w3-bar-item w3-button"> TELECHARGER</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button"> CONNEXION</a>
+  </nav>
+
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-display-container" style="font-family: 'Josefin Sans', sans-serif;" id="home">
+    <div class="w3-display-left w3-text-sand" style="padding:48px">
+      <span class="w3-jumbo w3-hide-small">Pour les 80 ans de l'IGN</span><br>
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Pour les 80 ans de l'IGN</span><br>
+      <span class="w3-large">Parcourez la France pour tenter de sauver le monde !</span>
+      <p><a href="#about" class="w3-button w3-hide-small w3-sand w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity w3-hover-amber">Intégrez la Guilde des Géodésiens</a></p>
+      <p><a href="#about" class="w3-button w3-hide-large w3-hide-medium w3-sand w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity w3-hover-amber">Intégrez la Guilde</a></p>
+    </div>
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+      <i class="fab fa-facebook w3-hover-opacity"></i>
+      <i class="fab fa-instagram w3-hover-opacity"></i>
+      <i class="fab fa-snapchat w3-hover-opacity"></i>
+      <i class="fab fa-youtube w3-hover-opacity"></i>
+      <i class="fab fa-twitter w3-hover-opacity"></i>
+    </div>
+  </header>
+
+  <!-- About Section -->
+
+  <div class="w3-container w3-sand" style="padding:128px 16px" id="about">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3 style="text-align: center;">Devenez membre de la mystérieuse et prestigieuse Guilde des Géodésiens</h3>
+        <p class="text">La Terre est aux mains de forces maléfiques qui tentent de la réduire en une bête sphère de métal impure !
+          Il est temps pour cette société secrète séculaire de se montrer au grand jour et de sauver le monde connu. Comment?
+          <br>Ses éminents membres vont silloner la France entière afin de réactiver des balises électro-magnétiques à l'aide
+          d'instruments étranges et sophistiqués. Mais la tâche s'annonce longue et fastidieuse, et le Grand Commandeur de
+          la Guilde n'a pu empêcher le périclitement de ses membres au fil des années et ils ne sont plus assez aujourd'hui pour
+          accomplir cette tâche...
+          Voici une chance unique de devenir à votre tour un géodésien ! Commencez votre ascension au sein de la Guilde
+          en y rentrant comme Porte-mire, découvrez les techniques secrètes et les instruments de la Géodésie et
+          réactivez les balises disséminées sur le territoire !
+        </p>
+        <div>
+          <hr class="type_1">
+        </div>
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="img/guilde.jpg" alt="Buildings" width="800" height="494">
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="w3-center w3-dark-gray w3-padding-64">
+    <a href="#myNavbar" class="w3-button w3-sand w3-hover-amber"><i class="fa fa-arrow-up w3-margin-right"></i>Haut de page</a>
+
+    <p class="w3-text-sand">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-amber">w3.css</a></p>
+  </footer>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+  </script>
+
+  </body>
+</html>

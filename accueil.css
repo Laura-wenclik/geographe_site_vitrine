@@ -1,0 +1,11 @@
+.type_1 {
+border: 0;
+height: 55px;
+background-image: url("images/banniere.webp");
+background-repeat: no-repeat;
+background-position: center;
+
+}
+.text{
+  text-align: center;
+}
