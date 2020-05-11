@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<title>telechargement</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="accueil.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<style>
+body {font-family: "Raleway", sans-serif}
+h1,h2,h3,h4,h5,h6{font-family: 'Josefin Sans', sans-serif}
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+</style>
+  <body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="top">
+      <div class="w3-bar w3-sand w3-card" id="myNavbar">
+        <a href="accueil.html" class="w3-bar-item w3-button w3-wide w3-hover-amber">GEOGRAPHE</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="http://www.ign.fr" class="w3-bar-item w3-button w3-hover-amber"><i class="fas fa-home"></i> CONCERNANT L'IGN</a>
+          <a href="classement.php" class="w3-bar-item w3-button w3-hover-amber"><i class="fas fa-scroll"></i> CLASSEMENT</a>
+          <a href="items.html" class="w3-bar-item w3-button w3-hover-amber"><i class="far fa-gem"></i> ITEMS</a>
+          <a href="telechargement.html" class="w3-bar-item w3-button w3-hover-amber"><i class="fas fa-download"></i> TELECHARGER</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-user-circle"></i> CONNEXION</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+          <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">X</a>
+    <a href="http://www.ign.fr" onclick="w3_close()" class="w3-bar-item w3-button"> CONCERNANT L'IGN</a>
+    <a href="classement.php" onclick="w3_close()" class="w3-bar-item w3-button"> CLASSEMENT</a>
+    <a href="items.html" class="w3-bar-item w3-button w3-hover-amber"> ITEMS</a>
+    <a href="telechargement.html" onclick="w3_close()" class="w3-bar-item w3-button"> TELECHARGER</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button"> CONNEXION</a>
+  </nav>
+
+
+<!-- download section -->
+
+  <div id="about">
+  <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" onclick="document.getElementById('download').style.display='block'">Download <i class="fab fa-android"></i> <i class="fab fa-apple"></i> <i class="fab fa-windows"></i></button>
+  <div class="w3-animate-opacity">
+    <img class="w3-image w3-grayscale w3-opacity " src="img/steampunk.png" alt="Image 1" style="width:100%">
+    <div class="w3-display-topleft w3-padding w3-hide-small" style="width:40%; margin-left:48px; margin-top:175px;">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge">INSTALLEZ LE PROGRAMME SUR VOTRE APPAREIL PORTATIF</h1>
+        <hr class="w3-opacity">
+        <p>Simple d'installation et gratuit</p>
+        <div class="w3-row-padding">
+          <div class="w3-col w3-half">
+            <button class="w3-button w3-block w3-green w3-round" onclick="document.getElementById('download').style.display='block'" style="font-family: 'Josefin Sans', sans-serif">Télécharger pour Apple <i class="fab fa-apple"></i></button>
+          </div>
+          <div class="w3-col w3-half">
+            <button class="w3-button w3-block w3-green w3-round" onclick="document.getElementById('download').style.display='block'" style="font-family: 'Josefin Sans', sans-serif">Télécharger pour Android <i class="fab fa-android"></i></button>
+          </div>
+        </div>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-gray w3-padding-64">
+
+  <p class="w3-text-sand">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-amber">w3.css</a></p>
+</footer>
+
+
+
+
+
+
+  <script>
+    
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+  </script>
+
+  </body>
+</html>
